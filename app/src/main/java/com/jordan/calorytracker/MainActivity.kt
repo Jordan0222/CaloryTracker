@@ -4,20 +4,19 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Scaffold
-import androidx.compose.material.Surface
 import androidx.compose.material.rememberScaffoldState
 import androidx.compose.ui.Modifier
-import androidx.navigation.NavController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.jordan.calorytracker.navigation.navigate
 import com.jordan.calorytracker.ui.theme.CaloryTrackerTheme
 import com.jordan.core.navigation.Route
+import com.jordan.onboarding_presentation.activity.ActivityScreen
 import com.jordan.onboarding_presentation.age.AgeScreen
 import com.jordan.onboarding_presentation.gender.GenderScreen
+import com.jordan.onboarding_presentation.goal.GoalScreen
 import com.jordan.onboarding_presentation.height.HeightScreen
 import com.jordan.onboarding_presentation.weight.WeightScreen
 import com.jordan.onboarding_presentation.welcome.WelcomeScreen
@@ -64,13 +63,17 @@ class MainActivity : ComponentActivity() {
                                 onNavigate = navController::navigate
                             )
                         }
-                        composable(Route.NUTRIENT_GOAL) {
-
-                        }
                         composable(Route.ACTIVITY) {
-
+                            ActivityScreen(
+                                onNavigate = navController::navigate
+                            )
                         }
                         composable(Route.GOAL) {
+                            GoalScreen(
+                                onNavigate = navController::navigate
+                            )
+                        }
+                        composable(Route.NUTRIENT_GOAL) {
 
                         }
                         composable(Route.TRACKER_OVERVIEW) {
