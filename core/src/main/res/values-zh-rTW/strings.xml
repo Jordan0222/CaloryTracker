@@ -40,7 +40,7 @@
     <string name="track">Track</string>
     <string name="error_something_went_wrong">哎呀, 發生了一些錯誤!</string>
     <string name="no_results">沒有結果</string>
-    <string name="error_invalid_values">他們不是有效的數值</string>
+    <string name="error_invalid_values">他們之中有數值不是單純的數字</string>
     <string name="what_are_your_nutrient_goals">您的營養目標是什麼?</string>
     <string name="percent_proteins">% 蛋白質</string>
     <string name="percent_fats">% 脂肪</string>
@@ -55,7 +55,7 @@
     <string name="lose">減重</string>
     <string name="lose_keep_or_gain_weight">您想增重還是減重?</string>
     <string name="whats_your_activity_level">您的運動強度為何?</string>
-    <string name="error_not_100_percent">這些值加起來必須達到 100%</string>
+    <string name="error_not_100_percent">這三個值加起來必須達到 100%</string>
     <string name="your_goal">您的目標:</string>
     <string name="delete">刪除</string>
 </resources>
