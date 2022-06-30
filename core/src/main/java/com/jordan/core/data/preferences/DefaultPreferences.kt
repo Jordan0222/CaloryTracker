@@ -14,6 +14,7 @@ import com.jordan.core.domain.preferences.Preferences.Companion.KEY_GENDER
 import com.jordan.core.domain.preferences.Preferences.Companion.KEY_GOAL_TYPE
 import com.jordan.core.domain.preferences.Preferences.Companion.KEY_HEIGHT
 import com.jordan.core.domain.preferences.Preferences.Companion.KEY_PROTEIN_RATIO
+import com.jordan.core.domain.preferences.Preferences.Companion.KEY_SHOULD_SHOW_ONBOARDING
 import com.jordan.core.domain.preferences.Preferences.Companion.KEY_WEIGHT
 
 class DefaultPreferences(
@@ -94,6 +95,19 @@ class DefaultPreferences(
             carbRatio = carbRatio,
             proteinRatio = proteinRatio,
             fatRatio = fatRatio
+        )
+    }
+
+    override fun saveShouldShowOnboarding(shouldShow: Boolean) {
+        sharedPref.edit()
+            .putBoolean(KEY_SHOULD_SHOW_ONBOARDING, shouldShow)
+            .apply()
+    }
+
+    override fun loadShouldShowOnboarding(): Boolean {
+        return sharedPref.getBoolean(
+            KEY_SHOULD_SHOW_ONBOARDING,
+            true
         )
     }
 }
