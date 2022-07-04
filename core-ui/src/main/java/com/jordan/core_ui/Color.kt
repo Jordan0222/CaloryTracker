@@ -1,4 +1,4 @@
-package com.jordan.calorytracker.ui.theme
+package com.jordan.core_ui
 
 import androidx.compose.ui.graphics.Color
 

@@ -14,7 +14,7 @@
     <string name="error_age_cant_be_empty">年齡不可為空</string>
     <string name="error_height_cant_be_empty">身高不可為空</string>
     <string name="error_weight_cant_be_empty">體重不可為空</string>
-    <string name="kcal">千卡</string>
+    <string name="kcal">大卡</string>
     <string name="carbs">碳水化合物</string>
     <string name="protein">蛋白質</string>
     <string name="fat">脂肪</string>
@@ -41,7 +41,7 @@
     <string name="error_something_went_wrong">哎呀, 發生了一些錯誤!</string>
     <string name="no_results">沒有結果</string>
     <string name="error_invalid_values">他們之中有數值不是單純的數字</string>
-    <string name="what_are_your_nutrient_goals">您的營養目標是什麼?</string>
+    <string name="what_are_your_nutrient_goals">您的營養目標為多少?</string>
     <string name="percent_proteins">% 蛋白質</string>
     <string name="percent_fats">% 脂肪</string>
     <string name="percent_carbs">% 碳水化合物</string>
