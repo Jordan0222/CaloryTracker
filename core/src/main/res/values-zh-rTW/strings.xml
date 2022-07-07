@@ -31,7 +31,7 @@
     <string name="lunch">午餐</string>
     <string name="dinner">晚餐</string>
     <string name="snacks">點心</string>
-    <string name="add_meal">新增 %s</string>
+    <string name="add_meal">新增%s</string>
     <string name="add">增加</string>
     <string name="search">搜尋...</string>
     <string name="today">今天</string>
