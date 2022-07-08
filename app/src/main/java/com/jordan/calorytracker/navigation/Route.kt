@@ -1,4 +1,4 @@
-package com.jordan.core.navigation
+package com.jordan.calorytracker.navigation
 
 object Route {
     const val WELCOME = "welcome"

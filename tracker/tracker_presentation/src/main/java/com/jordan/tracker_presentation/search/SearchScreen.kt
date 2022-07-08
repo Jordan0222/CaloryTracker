@@ -126,7 +126,7 @@ fun SearchScreen(
             state.trackableFood.isEmpty() -> {
                 Text(
                     text = stringResource(id = R.string.no_results),
-                    style = MaterialTheme.typography.h4,
+                    style = MaterialTheme.typography.h6,
                     textAlign = TextAlign.Center
                 )
             }

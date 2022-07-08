@@ -62,6 +62,7 @@ class CalculateMealNutrients(
                 (665.09f + 9.56f * userInfo.weight +
                         1.84f * userInfo.height - 4.67 * userInfo.age).roundToInt()
             }
+            else -> 0
         }
     }
 
@@ -70,6 +71,7 @@ class CalculateMealNutrients(
             is ActivityLevel.Low -> 1.2f
             is ActivityLevel.Medium -> 1.3f
             is ActivityLevel.High -> 1.4f
+            else -> 0f
         }
         val caloryExtra = when(userInfo.goalType) {
             is GoalType.LoseWeight -> -500
